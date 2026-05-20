@@ -11,7 +11,7 @@
 motion_model:
   ros__parameters:
     # Source of raw wheel odometry.
-    odom_topic: "/odom"
+    odom_topic: "/succulence/odom"          # physical: "/odom"
 
     dead_reckoning:
       # Where the dead-reckoned pose is republished for downstream nodes.
@@ -39,7 +39,7 @@ motion_model:
       # Larger: pose-uncertainty ellipse grows faster while driving forward,
       #   downstream filters trust odometry less. Smaller: tighter ellipse,
       #   more confidence in wheel odometry.
-      alpha1: 0.2
+      alpha1: 0.1
 
       # alpha2 - Translation variance contributed by rotation. Models how
       # much the rover slides sideways while turning.
@@ -57,7 +57,7 @@ motion_model:
       # turning). Primary lever for heading uncertainty.
       # Larger: heading uncertainty grows quickly during turns.
       # Smaller: rover trusts its yaw more between observations.
-      alpha4: 0.3
+      alpha4: 0.2
 
       # Maximum number of poses kept in the published Path message before
       # the oldest are dropped. Purely a visualisation cap.
@@ -72,7 +72,7 @@ motion_model:
 occupancy_grid_mapper:
   ros__parameters:
     # 2D laser scan input.
-    scan_topic: "/scan"
+    scan_topic: "/succulence/scan"          # physical: "/scan"
 
     # Pose source used to project scans into the world frame. The mapper
     # uses dead-reckoning here (no SLAM correction) — that is intentional,
@@ -150,8 +150,8 @@ occupancy_grid_mapper:
 # ====================================================================
 slam_node:
   ros__parameters:
-    scan_topic: "/scan"
-    odom_topic: "/odom"
+    scan_topic: "/succulence/scan"          # physical: "/scan"
+    odom_topic: "/succulence/odom"          # physical: "/odom"
 
     # Outputs from SLAM.
     map_topic: "/succulence/map"
@@ -165,7 +165,7 @@ slam_node:
       #   that are more likely to saturate the search window.
       # Smaller: more keyframes -> denser graph, more CPU per optimisation
       #   pass, but tighter local constraints.
-      keyframe_distance: 0.15
+      keyframe_distance: 0.1
 
       # Rotation between keyframes, in radians.
       # Larger: fewer keyframes during turns -> heading drift accumulates
@@ -241,7 +241,7 @@ slam_node:
       #   for scan-match edges in feature-poor areas.
       # Smaller: more matches accepted -> more edges but more noise from
       #   spurious correlations.
-      min_score: 0.2
+      min_score: 0.45
 
       # Side length of the local rasterised grid used when scoring scans.
       # Larger: matches over a larger area -> better in open spaces, more
@@ -320,9 +320,12 @@ planner_node:
     # Hardcoded mission goal (Kevin's location), in the map frame.
     # Increase x: goal moves east. Decrease x: goal moves west.
     # Increase y: goal moves north. Decrease y: goal moves south.
+    # Hardcoded mission goal (Kevin's location), in the map frame.
+    # Increase x: goal moves east. Decrease x: goal moves west.
+    # Increase y: goal moves north. Decrease y: goal moves south.
     goal:
-      x: 46.0 # metres in the map frame
-      y: 34.0 # metres in the map frame
+      x: 50.0
+      y: 3.0
 
 
 # ====================================================================
