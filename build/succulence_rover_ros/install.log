@@ -1,7 +1,9 @@
+/workspace/install/lib/python3.12/site-packages/succulence_rover_ros/scan_matcher.py
 /workspace/install/lib/python3.12/site-packages/succulence_rover_ros/__init__.py
 /workspace/install/lib/python3.12/site-packages/succulence_rover_ros/occupancy_grid_mapper.py
 /workspace/install/lib/python3.12/site-packages/succulence_rover_ros/motion_model.py
 /workspace/install/lib/python3.12/site-packages/succulence_rover_ros/utils.py
+/workspace/install/lib/python3.12/site-packages/succulence_rover_ros/__pycache__/scan_matcher.cpython-312.pyc
 /workspace/install/lib/python3.12/site-packages/succulence_rover_ros/__pycache__/__init__.cpython-312.pyc
 /workspace/install/lib/python3.12/site-packages/succulence_rover_ros/__pycache__/occupancy_grid_mapper.cpython-312.pyc
 /workspace/install/lib/python3.12/site-packages/succulence_rover_ros/__pycache__/motion_model.cpython-312.pyc

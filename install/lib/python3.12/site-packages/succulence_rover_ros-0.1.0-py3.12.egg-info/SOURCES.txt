@@ -15,4 +15,5 @@ resource/succulence_rover_ros
 succulence_rover_ros/__init__.py
 succulence_rover_ros/motion_model.py
 succulence_rover_ros/occupancy_grid_mapper.py
+succulence_rover_ros/scan_matcher.py
 succulence_rover_ros/utils.py
