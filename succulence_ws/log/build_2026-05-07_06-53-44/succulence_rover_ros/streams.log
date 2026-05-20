@@ -1,0 +1,28 @@
+[0.359s] Invoking command in '/workspace/succulence_ws/build/succulence_rover_ros': PYTHONPATH=/workspace/succulence_ws/build/succulence_rover_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/succulence_ws/install/succulence_rover_ros/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/succulence_ws/build/succulence_rover_ros/build --no-deps symlink_data
+[0.506s] running develop
+[0.587s] running egg_info
+[0.594s] writing succulence_rover_ros.egg-info/PKG-INFO
+[0.595s] writing dependency_links to succulence_rover_ros.egg-info/dependency_links.txt
+[0.595s] writing entry points to succulence_rover_ros.egg-info/entry_points.txt
+[0.595s] writing requirements to succulence_rover_ros.egg-info/requires.txt
+[0.595s] writing top-level names to succulence_rover_ros.egg-info/top_level.txt
+[0.611s] reading manifest file 'succulence_rover_ros.egg-info/SOURCES.txt'
+[0.611s] writing manifest file 'succulence_rover_ros.egg-info/SOURCES.txt'
+[0.620s] running build_ext
+[0.620s] Creating /workspace/succulence_ws/install/succulence_rover_ros/lib/python3.12/site-packages/succulence-rover-ros.egg-link (link to .)
+[0.621s] Installing motion_model_node script to /workspace/succulence_ws/install/succulence_rover_ros/lib/succulence_rover_ros
+[0.621s] Installing navigator_node script to /workspace/succulence_ws/install/succulence_rover_ros/lib/succulence_rover_ros
+[0.621s] Installing occupancy_grid_mapper_node script to /workspace/succulence_ws/install/succulence_rover_ros/lib/succulence_rover_ros
+[0.621s] Installing planner_node script to /workspace/succulence_ws/install/succulence_rover_ros/lib/succulence_rover_ros
+[0.621s] Installing slam_node script to /workspace/succulence_ws/install/succulence_rover_ros/lib/succulence_rover_ros
+[0.621s] 
+[0.621s] Installed /workspace/succulence_ws/build/succulence_rover_ros
+[0.622s] running symlink_data
+[0.622s] symbolically linking /workspace/succulence_ws/build/succulence_rover_ros/launch/dead_reckoning_physical.launch.py -> /workspace/succulence_ws/install/succulence_rover_ros/share/succulence_rover_ros/launch
+[0.622s] symbolically linking /workspace/succulence_ws/build/succulence_rover_ros/launch/slam_physical.launch.py -> /workspace/succulence_ws/install/succulence_rover_ros/share/succulence_rover_ros/launch
+[0.622s] symbolically linking /workspace/succulence_ws/build/succulence_rover_ros/launch/dead_reckoning_sim.launch.py -> /workspace/succulence_ws/install/succulence_rover_ros/share/succulence_rover_ros/launch
+[0.622s] symbolically linking /workspace/succulence_ws/build/succulence_rover_ros/launch/mission_physical.launch.py -> /workspace/succulence_ws/install/succulence_rover_ros/share/succulence_rover_ros/launch
+[0.622s] symbolically linking /workspace/succulence_ws/build/succulence_rover_ros/launch/slam_sim.launch.py -> /workspace/succulence_ws/install/succulence_rover_ros/share/succulence_rover_ros/launch
+[0.622s] symbolically linking /workspace/succulence_ws/build/succulence_rover_ros/launch/mission_sim.launch.py -> /workspace/succulence_ws/install/succulence_rover_ros/share/succulence_rover_ros/launch
+[0.622s] symbolically linking /workspace/succulence_ws/build/succulence_rover_ros/config/params_physical.yaml -> /workspace/succulence_ws/install/succulence_rover_ros/share/succulence_rover_ros/config
+[0.639s] Invoked command in '/workspace/succulence_ws/build/succulence_rover_ros' returned '0': PYTHONPATH=/workspace/succulence_ws/build/succulence_rover_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/succulence_ws/install/succulence_rover_ros/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/succulence_ws/build/succulence_rover_ros/build --no-deps symlink_data
