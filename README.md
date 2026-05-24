@@ -36,7 +36,7 @@ In a second terminal run the code below followed by the desired file ie: succule
 ```
 ros2 launch 
 ```
-Open Rviz 
+in another terminal open Rviz 
 ```
 Rviz2
 ```
@@ -44,7 +44,7 @@ Rviz2
 
 
 # Work Breakdown
-## work was accomplished together during tutorials, but depending on the week and system issues, work was primarily done on one of our two devices:
+##Work was accomplished together during tutorials, but depending on the week and system issues, work was primarily done on one of our two devices:
 | Component | Contributor |
 | ------------ | ------------- |
 | Motion Model | Alwyn  |
