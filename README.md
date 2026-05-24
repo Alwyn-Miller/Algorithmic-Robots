@@ -44,7 +44,7 @@ Rviz2
 
 
 # Work Breakdown
-##Work was accomplished together during tutorials, but depending on the week and system issues, work was primarily done on one of our two devices:
+Work was accomplished together during tutorials, but depending on the week and system issues, work was primarily done on one of our two devices:
 | Component | Contributor |
 | ------------ | ------------- |
 | Motion Model | Alwyn  |
